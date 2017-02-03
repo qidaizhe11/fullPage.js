@@ -198,6 +198,7 @@ $(document).ready(function() {
 		responsiveWidth: 0,
 		responsiveHeight: 0,
 		responsiveSlides: false,
+		offsetTop: 0,
 
 		//Custom selectors
 		sectionSelector: '.section',
@@ -468,6 +469,8 @@ In order to prevent fullpage.js from creating the scrollbar in certain sections 
 - `responsiveWidth`: (default `0`)  A normal scroll (`autoScrolling:false`) will be used under the defined width in pixels. A class `fp-responsive` is added to the body tag in case the user wants to use it for his own responsive CSS. For example, if set to 900, whenever the browser's width is less than 900 the plugin will scroll like a normal site.
 
 - `responsiveHeight`: (default `0`)  A normal scroll (`autoScrolling:false`) will be used under the defined height in pixels. A class `fp-responsive` is added to the body tag in case the user wants to use it for his own responsive CSS. For example, if set to 900, whenever the browser's height is less than 900 the plugin will scroll like a normal site.
+
+- `offsetTop`: (default `0`). When set to a numeric value, this defines a top offset for the container height. This is particularly useful if you have a fixed header navigation that follows your scroll and you do not want the header navigation to cut off content in your sections.
 
 - `responsiveSlides`: (default `false`) [Extension of fullpage.js](http://alvarotrigo.com/fullPage/extensions/). When set to `true` slides will be turned into vertical sections when responsive mode is fired. (by using the `responsiveWidth` or `responsiveHeight` options detailed above). Requires fullpage.js >= 2.8.5.
 
